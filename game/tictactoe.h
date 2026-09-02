@@ -6,6 +6,7 @@ extern int best_i, best_j;
 
 void reset_board();
 int is_spot_free(int i, int j);
+int board_is_full();
 int check_winner();
 void showboard();
 int test_move(int val, int depth);

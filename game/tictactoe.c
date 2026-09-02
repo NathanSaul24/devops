@@ -18,6 +18,15 @@ int is_spot_free(int i, int j)
 	return b[i][j] == 0;
 }
 
+int board_is_full()
+{
+	int i, j;
+	for_ij {
+		if (b[i][j] == 0) return 0;
+	}
+	return 1;
+}
+
 int check_winner()
 {
 	int i;

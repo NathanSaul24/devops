@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xs and Os</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #333;
+            font-size: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
+            height: 30px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xs and Os</h1>
+    <p>You are O, the computer is X.</p>
+
+    <table id="board_table">
+        <tr>
+            <td id="spot_1" onclick="playerClicked(1)"></td>
+            <td id="spot_2" onclick="playerClicked(2)"></td>
+            <td id="spot_3" onclick="playerClicked(3)"></td>
+        </tr>
+        <tr>
+            <td id="spot_4" onclick="playerClicked(4)"></td>
+            <td id="spot_5" onclick="playerClicked(5)"></td>
+            <td id="spot_6" onclick="playerClicked(6)"></td>
+        </tr>
+        <tr>
+            <td id="spot_7" onclick="playerClicked(7)"></td>
+            <td id="spot_8" onclick="playerClicked(8)"></td>
+            <td id="spot_9" onclick="playerClicked(9)"></td>
+        </tr>
+    </table>
+
+    <div id="message"></div>
+    <button onclick="startNewGame()">New Game</button>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
