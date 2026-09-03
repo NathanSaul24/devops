@@ -36,6 +36,20 @@
     <h1>Xs and Os</h1>
     <p>You are O, the computer is X.</p>
 
+    <div id="login_area">
+        <input type="text" id="username_box" placeholder="username">
+        <input type="password" id="password_box" placeholder="password">
+        <button onclick="doSignup()">Sign up</button>
+        <button onclick="doLogin()">Log in</button>
+    </div>
+
+    <div id="logged_in_area" style="display:none;">
+        Logged in as <span id="logged_in_username"></span>
+        <button onclick="doLogout()">Log out</button>
+        <button onclick="showStats()">Show my stats</button>
+        <div id="stats_area"></div>
+    </div>
+
     <table id="board_table">
         <tr>
             <td id="spot_1" onclick="playerClicked(1)"></td>
